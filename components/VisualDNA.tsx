@@ -64,15 +64,15 @@ export const VisualDNA: React.FC = () => {
             ))}
           </div>
         </div>
-        <div className="flex-1 relative bg-slate-50 p-8 md:p-16 flex flex-col justify-center overflow-hidden min-h-[400px]">
+        <div className="flex-1 relative bg-slate-50 p-8 md:p-12 lg:p-16 flex flex-col justify-center overflow-hidden min-h-[400px]">
           <div className="absolute top-0 right-0 p-12 opacity-5 pointer-events-none"><Calendar size={300} /></div>
           <div key={activeTimelineIdx} className="relative z-10 animate-fade-in-right">
             <div className="inline-flex items-center gap-4 mb-8">
-              <span className="text-5xl md:text-8xl font-serif font-black text-brand-deep/10">{BRAND_TIMELINE[activeTimelineIdx].year}</span>
+              <span className="text-4xl md:text-6xl lg:text-7xl font-serif font-black text-brand-deep/10">{BRAND_TIMELINE[activeTimelineIdx].year}</span>
               <div className="h-px w-12 bg-brand-cyan" />
             </div>
             <div className="max-w-2xl space-y-6">
-              <h3 className="text-3xl md:text-5xl font-bold font-serif text-slate-900 leading-tight">{BRAND_TIMELINE[activeTimelineIdx].event}</h3>
+              <h3 className="text-2xl md:text-4xl lg:text-5xl font-bold font-serif text-slate-900 leading-tight">{BRAND_TIMELINE[activeTimelineIdx].event}</h3>
               <p className="text-lg md:text-xl text-slate-600 leading-relaxed font-normal border-l-4 border-brand-cyan pl-6">{BRAND_TIMELINE[activeTimelineIdx].description}</p>
             </div>
             <div className="mt-12 flex gap-4">

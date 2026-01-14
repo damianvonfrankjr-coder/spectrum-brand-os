@@ -49,7 +49,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-slate-50 text-slate-900 font-sans selection:bg-brand-cyan/20 selection:text-brand-deep">
+    <div className="min-h-screen bg-slate-50 text-slate-900 font-sans selection:bg-brand-cyan/20 selection:text-brand-deep overflow-x-hidden">
       <Sidebar 
         activeSection={activeSection} 
         onNavigate={scrollToSection} 
@@ -57,7 +57,8 @@ export default function App() {
         toggleSidebar={() => setIsSidebarOpen(!isSidebarOpen)}
       />
 
-      <main className="min-w-0 w-full transition-all duration-300 md:ml-72">
+      {/* Removed w-full to prevent overflow with ml-72 */}
+      <main className="min-w-0 transition-all duration-300 md:ml-72 relative">
         <header className="md:hidden p-4 bg-white border-b border-slate-200 sticky top-0 z-20 flex justify-between items-center shadow-sm">
            <img src={logoUrl} alt="Spectrum Killian" className="h-8 w-auto object-contain" />
            <button onClick={() => setIsSidebarOpen(true)} className="p-2 text-slate-600">
