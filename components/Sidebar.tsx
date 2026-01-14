@@ -26,11 +26,11 @@ const NavItem = ({
     onClick={onClick}
     className={`w-full flex items-center gap-4 px-6 py-4 transition-all duration-200 border-l-4 font-sans ${
       isActive 
-        ? 'bg-brand-deep/5 border-brand-cyan text-brand-deep font-semibold' 
+        ? 'bg-brand-deep/10 border-brand-cyan text-brand-deep font-bold shadow-inner' 
         : 'border-transparent text-slate-500 hover:bg-slate-50 hover:text-slate-800 font-normal'
     }`}
   >
-    <Icon size={20} />
+    <Icon size={20} className={isActive ? "text-brand-deep" : "text-slate-400"} />
     <span>{label}</span>
   </button>
 );
@@ -43,13 +43,13 @@ export const Sidebar: React.FC<SidebarProps> = ({ activeSection, onNavigate, isO
       {/* Mobile Overlay */}
       {isOpen && (
         <div 
-          className="fixed inset-0 bg-black/50 z-20 md:hidden"
+          className="fixed inset-0 bg-black/50 z-40 md:hidden"
           onClick={toggleSidebar}
         />
       )}
       
       {/* Sidebar Container */}
-      <aside className={`fixed md:sticky top-0 left-0 h-screen w-72 bg-white border-r border-slate-200 z-30 transition-transform duration-300 transform ${isOpen ? 'translate-x-0' : '-translate-x-full md:translate-x-0'}`}>
+      <aside className={`fixed top-0 left-0 h-screen w-72 bg-white border-r border-slate-200 z-50 transition-transform duration-300 transform ${isOpen ? 'translate-x-0' : '-translate-x-full md:translate-x-0'} shadow-xl md:shadow-none`}>
         <div className="p-8 border-b border-slate-100 flex justify-between items-center">
           <div className="flex items-center">
              <div className="h-10 flex items-center">
