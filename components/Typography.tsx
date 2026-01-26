@@ -20,7 +20,7 @@ export const Typography: React.FC = () => {
     const isKillian = activeColor.hex === BRAND_COLORS[1].hex;
     const isDental = activeColor.hex === BRAND_COLORS[2].hex;
     const isAlliance = activeColor.hex === BRAND_COLORS[3].hex;
-    const isRed = activeColor.hex === BRAND_COLORS[4].hex;
+    const isGold = activeColor.hex === BRAND_COLORS[4].hex;
     const isSilver = activeColor.hex === BRAND_COLORS[5].hex;
 
     // Standard fallback logic
@@ -49,7 +49,7 @@ export const Typography: React.FC = () => {
       montserratLabelStyle = { color: BRAND_COLORS[0].hex }; // Spectrum
       titleStyle = { color: BRAND_COLORS[0].hex }; // Spectrum
       subtitleStyle = { color: BRAND_COLORS[1].hex }; // Killian
-    } else if (isRed) {
+    } else if (isGold) {
       headingLabelStyle = { color: BRAND_COLORS[0].hex }; // Spectrum
       montserratLabelStyle = { color: '#E5E4E2' }; // Metallic Silver
       titleStyle = { color: '#ffffff' }; // White
@@ -72,7 +72,7 @@ export const Typography: React.FC = () => {
     const isKillian = activeColor.hex === BRAND_COLORS[1].hex;
     const isDental = activeColor.hex === BRAND_COLORS[2].hex;
     const isAlliance = activeColor.hex === BRAND_COLORS[3].hex;
-    const isRed = activeColor.hex === BRAND_COLORS[4].hex;
+    const isGold = activeColor.hex === BRAND_COLORS[4].hex;
     const isSilver = activeColor.hex === BRAND_COLORS[5].hex;
 
     let infoLabelStyle = { color: BRAND_COLORS[2].hex }; 
@@ -105,7 +105,7 @@ export const Typography: React.FC = () => {
       text1Style = { color: BRAND_COLORS[0].hex };
       text2Style = { color: BRAND_COLORS[1].hex };
       text3Style = { color: 'rgba(5, 32, 48, 0.7)' };
-    } else if (isRed) {
+    } else if (isGold) {
       infoLabelStyle = { color: BRAND_COLORS[0].hex };
       loraLabelStyle = { color: '#E5E4E2' };
       text1Style = { color: '#ffffff' };

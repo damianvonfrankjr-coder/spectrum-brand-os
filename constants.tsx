@@ -110,13 +110,13 @@ export const BRAND_COLORS: ColorDefinition[] = [
     textColor: 'text-slate-900'
   },
   {
-    name: 'Lab Red',
-    hex: '#ff6b6b',
-    rgb: '255, 107, 107',
-    cmyk: '0, 58, 58, 0',
+    name: 'Lab Gold',
+    hex: '#B3A369',
+    rgb: '179, 163, 105',
+    cmyk: '34, 29, 78, 4',
     usage: 'Premium Accents, Awards, Special Status',
     textColor: 'text-white',
-    gradientStops: ['#cc5656', '#ff6b6b', '#ff8f8f']
+    gradientStops: ['#8f8254', '#B3A369', '#d6c485']
   },
   {
     name: 'Solutions Silver',
